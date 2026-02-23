@@ -1,7 +1,9 @@
 {
   "name": "Python Project with uv",
   "image": "mcr.microsoft.com/devcontainers/python:3.13",
-  
+    "features": {
+    "ghcr.io/devcontainers/features/git-lfs:1": {}
+  },  
   "onCreateCommand": "curl -LsSf https://astral.sh/uv/install.sh | sh",
   
   "updateContentCommand": "export PATH=\"$HOME/.local/bin:$PATH\" && uv sync",
